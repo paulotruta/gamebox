@@ -1,0 +1,17 @@
+.DS_Store
+*.pyc
+*.log
+*.swp
+*.retry
+.env
+.idea
+.vscode
+*~
+/logs
+/data
+.~*
+common/CACHE
+gamebox/settings/local.py
+db.sqlite3
+__pycache__
+!.gitignore

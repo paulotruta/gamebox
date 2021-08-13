@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+
+    {% image self.banner_image fill-900x400 as img %}
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="background-image: url('{{ img.url }}'); background-size: cover; color: #fff !important; height: 95vh;">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">{{ self.title }}</h1>
+          <p class="lead fw-normal">{{ self.banner_title }}</p>
+          <a class="btn btn-outline-warning" href="#">Coming soon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+
+{% endblock %}
