@@ -11,7 +11,7 @@
 /data
 .~*
 common/CACHE
-bakerydemo/settings/local.py
-bakerydemodb
+gamebox/settings/local.py
+db.sqlite3
 __pycache__
 !.gitignore
